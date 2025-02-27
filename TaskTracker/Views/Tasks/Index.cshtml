@@ -1,0 +1,28 @@
+﻿@model IEnumerable<TaskTracker.Models.TaskItem>
+
+<h2>Tasks</h2>
+<a href="@Url.Action("Create", "Tasks")">Create New Task for User</a>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>IsCompleted</th>
+        <th>DueDate</th>
+        <th>User Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var task in Model)
+    {
+        <tr>
+            <td>@task.Title</td>
+            <td>@task.Description</td>
+            <td>@task.IsCompleted</td>
+            <td>@task.DueDate</td>
+            <td>@task.UserId</td>
+        </tr>
+    }
+    </tbody>
+</table>
