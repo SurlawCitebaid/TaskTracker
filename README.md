@@ -14,7 +14,7 @@ This project is intended to show an end-to-end example of a .NET web application
 
 **Key Features**
 - **MVC** structure with `Controllers`, `Views`, and `Models`.
-- **EF Core** for database operations (SQL Server or SQLite).
+- **EF Core** for database operations (SQL Server).
 - **Hosted Service** that checks overdue tasks asynchronously.
 
 ## Project Structure
